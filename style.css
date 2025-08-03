@@ -1,0 +1,118 @@
+/* Reset & base styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Main quiz container */
+.quiz-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f9fafb;
+}
+
+/* Question text */
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Answer buttons grid */
+#answers {
+  display: grid;
+  gap: 10px;
+}
+
+/* Individual answer buttons */
+.answer-btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.answer-btn:hover {
+  background-color: #dbeafe;
+  transform: scale(1.02);
+}
+
+/* Correct/incorrect button styling */
+.answer-btn.correct {
+  background-color: #22c55e; /* green */
+  color: #fff;
+}
+
+.answer-btn.incorrect {
+  background-color: #ef4444; /* red */
+  color: #fff;
+}
+
+/* Next button styling */
+#next-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Result box */
+#result-box {
+  margin-top: 20px;
+}
+
+#result-box.hide {
+  display: none;
+}
+
+#result-box h2 {
+  margin-bottom: 10px;
+}
+
+#result-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #10b981;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#result-box button:hover {
+  background-color: #059669;
+}
